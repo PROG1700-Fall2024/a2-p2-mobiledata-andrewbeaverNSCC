@@ -9,6 +9,12 @@
 #Student Name:  Andrew Beaver
 
 def main():
+    #Establish usage rate variables
+    usageLevelOne = 20
+    usageLevelTwo = 0.105
+    usageLevelThree = 0.11
+    usageLevelFour = 118
+
     #Display welcome message
     print("Erewhon Mobile Data Plans")
 
@@ -17,13 +23,13 @@ def main():
 
     #Establish statements to get the rate for each total data usage category
     if usage <= 200:
-        usageRate = 20
+        usageRate = usageLevelOne
     elif usage > 200 and usage <= 500:
-        usageRate = usage * 0.105
+        usageRate = usage * usageLevelTwo
     elif usage > 500 and usage <= 1024:
-        usageRate = usage * 0.11
+        usageRate = usage * usageLevelThree
     else:
-        usageRate = 118
+        usageRate = usageLevelFour
 
     #Display the data fee to the user
     print("\nTotal charge is ${0:.2f}".format(usageRate)) 
