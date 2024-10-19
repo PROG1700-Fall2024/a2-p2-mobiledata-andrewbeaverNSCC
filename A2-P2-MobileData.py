@@ -9,8 +9,6 @@
 #Student Name:  Andrew Beaver
 
 def main():
-    # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
     #Display welcome message
     print("Erewhon Mobile Data Plans")
 
@@ -29,7 +27,5 @@ def main():
 
     #Display the data fee to the user
     print("\nTotal charge is ${0:.2f}".format(usageRate)) 
-
-    # YOUR CODE ENDS HERE
 
 main()
